@@ -1,0 +1,149 @@
+main {
+    background-color: var(--color-grey-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 30px;
+    margin-bottom: 1rem;
+    flex: 1 1 0;
+}
+
+.imgs__grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.06rem;
+    width: 100%;
+    margin: 0 auto 2.5rem auto;
+    justify-content: flex-start;
+}
+
+.button__img {
+    max-width: 49%;
+    /* background-color: greenyellow; */
+}
+
+.button__img img {
+    max-width: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.875rem;
+}
+
+.aside__biography {
+    background-color: var(--color-brand-400);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: justify;
+    line-height: 1.5625rem;
+    width: 100%;
+}
+
+.line {
+    display: none;
+}
+
+.aside__contato {
+    background-color: var(--color-brand-400);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: justify;
+    line-height: 1.5625rem;
+    width: 100%;
+    
+}
+
+.aside__contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.aside__contato form input {
+    height: 2.625rem;
+    padding: 1rem;
+}
+
+
+.aside__contato textarea {
+    border: none;
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--font-size-3);
+    color: var(--color-brand-100);
+}
+
+.aside__contato textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+}
+
+.aside__contato button {
+    color: var(--color-grey-200);
+    width: 10.1875rem;
+    height: 2.375rem;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: #876870;
+    margin: auto;
+}
+
+@media (min-width: 500px) {
+    .button__img {
+        max-width: 33%;
+    }
+
+    .button__img img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+
+    main {
+        width: 700px;
+        margin-bottom: 1rem;
+    }
+
+    .button__img {
+        max-width: 24.8%;
+    }
+
+    .button__img img {
+        max-width: 100%;
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 0fr 1fr;
+        gap: 0.8rem;
+    }
+
+    .aside__biography {
+        height: 100%;
+    }
+
+    .line {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: #876870;
+    }
+
+    .aside__contato {
+        height: 100%;
+    }
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./src/styles/nav.css">
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
     <!-- Script -->
     <script type="module" src="./src/scripts/script.js"></script>
 
@@ -22,35 +23,43 @@
             <img src="./src/assets/NG_logo.png" alt="logo">
             <img class="img__menu" src="./src/assets/menu-icon.png" style="width: 30px;" alt="menu icon">
 
-            <ul class="menu--open hidden">
-                <li><button class="li">Início</button></li>
-                <li><button class="li">Projetos</button></li>
-                <li><button class="li">Sobre nós</button></li>
-                <li><button class="li">Contatos</button></li>
+            <ul class="menu--list hidden">
+                <li>Início</li>
+                <li>Projetos</li>
+                <li>Sobre nós</li>
+                <li>Contatos</li>
             </ul>
-
         </div>
+
+        <div class="div__menu">
+            <hr>
+            <ul class="hidden menu--open">
+                <li>Início</li>
+                <li>Projetos</li>
+                <li>Sobre nós</li>
+                <li>Contatos</li>
+            </ul>
+        </div>
+            
+
     </nav>
+
     <main class="container__main">
         <div class="imgs__grid">
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
-            <button class="button__img"><img class="img" src="" alt=""></button>
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
+            <img class="img" src="" alt="">
         </div>
-        <div class="modal__container">
-            <dialog class="modal__controler">
-                <img class="modal__img--show" src="" alt="">
-            </dialog>
-        </div>
+
         <aside>
             <div class="aside__biography">
                 <h1>Quem sou eu</h1>
@@ -61,7 +70,9 @@
                     aperiam corporis iure tempore vero commodi, non atque! Explicabo soluta in accusamus, rerum aliquid
                     et dolor eaque?</p>
             </div>
+
             <hr class="line"></hr>
+    
             <div class="aside__contato">
                 <h1>Contate-nos</h1>
                 <form action="">
@@ -69,11 +80,12 @@
                     <input type="email" name="" id="" placeholder="Email">
                     <input type="number" name="" id="" placeholder="Telefone (55)">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <button>ENVIAR</button>
                 </form>
-                <button>ENVIAR</button>
             </div>
         </aside>
     </main>
+
     <footer>
         <div class="container__footer">
             <div class="brandLogo"><img src="./src/assets/NG_footer.png" alt="logo"></div>
@@ -84,6 +96,13 @@
             </div>
         </div>
     </footer>
+
+    <dialog class="modal__controller">
+        <span class="button__close">&times;</span>
+        <span class="button__left">&lt;</span>
+        <span class="button__right">&gt;</span>
+        <img class="modal__img--show" src="" alt="">
+    </dialog>
 </body>
 
 </html>

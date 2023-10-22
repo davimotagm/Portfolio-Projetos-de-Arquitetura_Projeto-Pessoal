@@ -5,6 +5,7 @@ main {
     align-items: center;
     padding: 16px 30px;
     margin-bottom: 1rem;
+    margin-top: 5rem;
     flex: 1 1 0;
 }
 
@@ -18,13 +19,8 @@ main {
     justify-content: flex-start;
 }
 
-.button__img {
+.imgs__grid img {
     max-width: 49%;
-    /* background-color: greenyellow; */
-}
-
-.button__img img {
-    max-width: 100%;
 }
 
 aside {
@@ -62,7 +58,7 @@ aside {
     text-align: justify;
     line-height: 1.5625rem;
     width: 100%;
-    
+
 }
 
 .aside__contato form {
@@ -93,21 +89,21 @@ aside {
 
 .aside__contato button {
     color: var(--color-grey-200);
-    width: 10.1875rem;
-    height: 2.375rem;
-    flex-shrink: 0;
+    width: 130px;
+    height: 30px;
     border-radius: 17px;
     background: #876870;
     margin: auto;
 }
 
-@media (min-width: 500px) {
-    .button__img {
-        max-width: 33%;
-    }
+.aside__contato button:hover {
+    background-color: var(--color-brand-100);
+    transition: 250ms;
+}
 
-    .button__img img {
-        max-width: 100%;
+@media (min-width: 500px) {
+    .imgs__grid img {
+        max-width: 33%;
     }
 }
 
@@ -118,12 +114,8 @@ aside {
         margin-bottom: 1rem;
     }
 
-    .button__img {
+    .imgs__grid img {
         max-width: 24.8%;
-    }
-
-    .button__img img {
-        max-width: 100%;
     }
 
     aside {

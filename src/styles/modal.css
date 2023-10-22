@@ -1,0 +1,51 @@
+.modal__controller {
+    width: 80%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.modal__controller:focus-visible {
+    outline: none;
+}
+
+.modal__controller::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+}
+
+.modal__img--show {
+    width: 100%;
+    display: grid;
+}
+
+.button__close, .button__left, .button__right {
+    position: absolute;
+    color: #ffffff;
+    font-size: var(--font-size-1);
+    font-family:'Poppins';
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.button__close {
+    right: 15px;
+    top: 7px;
+}
+
+.button__left {
+    left: 5px;
+    top: 45%;
+}
+
+.button__right {
+    right: 5px;
+    top: 45%;
+}
+
+@media (min-width: 700px) {
+    .modal__controller {
+        max-width: 700px;
+    }
+}
